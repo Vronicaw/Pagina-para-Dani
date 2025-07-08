@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi amorcito</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <h1>Bienvenida mi amorcito 🥰</h1>
+      <p>Click on the buttom to see our story</p>
+      <button id="enter-site">Let's go!</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>For My Love</h1>
+    <p>A little piece of our story to keep forever.</p>
+    <button id="toggle-music" aria-label="Pausar música 🎵">🔈</button>
+    </header>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#linea-tiempo">Our timeline</a></li>
+        <li><a href="#promesas">Promises</a></li>
+        <li><a href="#memorias">Memories</a></li>
+        <li><a href="#mensaje">Send me a message</a></li>
+      </ul>
+    </nav>
+
+    <audio id="bg-music" autoplay loop>
+      <source src="audio/audio.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio HTML5 😢
+    </audio>
+      
+    <div id="inicio" class="content-section">
+      <div class="top-section">
+        <div class="photo-week">
+          <h2 class="week">Photo of the week</h2>
+          <img id="weekly-photo" src="img/foto1.jpg" alt="Photo of the week" />
+        </div>
+
+        <div class="daily-message">
+          <h2 class="day">Message of the Day</h2>
+          <div id="message-card"></div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Todo esto es para las fechas especiales, espero que no se dañe-->
+    <div id="linea-tiempo" class="content-section">
+      <div class="timeline-container">
+        <button class="scroll-button left">&#8592;</button>
+        <div class="timeline">
+          <div class="event" data-img="img/evento1.jpg">
+            <p class="date">Jun 16, 2024</p>
+            <p class="description">First time we met 🫱🏻‍🫲🏾</p>
+          </div>
+          <div class="event" data-img="img/evento2.jpg">
+            <p class="date">Jul 13, 2024</p>
+            <p class="description">First kiss 💋</p>
+          </div>
+          <div class="event" data-img="img/evento3.jpg">
+            <p class="date">Jul 27, 2024</p>
+            <p class="description">We went to Yvoire and spent our first night together 🛏️</p>
+          </div>
+          <div class="event" data-img="img/evento4.jpg">
+            <p class="date">Ago 10, 2024</p>
+            <p class="description">You asked me to be your girlfriend 🤎💛</p>
+          </div>
+          <div class="event" data-img="img/evento5.jpg">
+            <p class="date">Nov 24, 2024</p>
+            <p class="description">Our first christmas together 🎄</p>
+          </div>
+        </div>
+        <button class="scroll-button right">&#8594;</button>
+      </div>
+    </div>
+
+    <div id="promesas" class="content-section">
+      <div class="promises">
+        <h2>My Promises to You</h2>
+        <ul>
+          <li>To give you the best of me, so you feel loved the way you like to be loved</li>
+          <li>To do everything that's on my hands, so we can be together again</li>
+          <li>To always listen to you. I know I talk a lot haha but I can listen to you too</li>
+          <li>To love you more each day</li>
+          <li>To make you some nice colombian food hehe</li>
+          <li>To grab your hand everytime I can</li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Todo esto es para la galería de recuerdos-->
+    <div id="memorias" class="content-section">
+      <div class="memories">
+        <h2>Some of my favorite memories of us 💭</h2>
+        <div class="gallery">
+          <div class="gallery-item"><img src="img/memoria1.jpg" alt="Recuerdo"><p class="photo-caption"></p>Cinema time! 🍿 Do you remember the movie name? </div>
+          <div class="gallery-item"><img src="img/memoria2.jpg" alt="Recuerdo"><p class="photo-caption"></p>We ate your delicious fish recipe 🤤</div>
+          <div class="gallery-item"><img src="img/memoria3.jpg" alt="Recuerdo"><p class="photo-caption">Lentils for good luck 🍀</p></div>
+          <div class="gallery-item"><img src="img/memoria4.jpg" alt="Recuerdo"><p class="photo-caption">The tower is not straight and neither we 😂</p></div>
+          <div class="gallery-item"><img src="img/memoria5.jpg" alt="Recuerdo"><p class="photo-caption">Hahaha no description needed</p></div>
+          <div class="gallery-item"><img src="img/memoria6.jpg" alt="Recuerdo"><p class="photo-caption"></p>The sun was hitting hard ☀️</div>
+          <div class="gallery-item"><img src="img/memoria7.jpg" alt="Recuerdo"><p class="photo-caption">SO SEXY 😍</p></div>
+          <div class="gallery-item"><img src="img/memoria8.jpg" alt="Recuerdo"><p class="photo-caption">SO CUTE! 🥰</p></div>
+          <div class="gallery-item"><img src="img/memoria9.jpg" alt="Recuerdo"><p class="photo-caption">This day at the museum was FUN AF. We should go back 🤔</p></div>
+          <div class="gallery-item"><img src="img/memoria10.jpg" alt="Recuerdo"><p class="photo-caption">I met your friends this day 😊</p></div>
+          <div class="gallery-item"><img src="img/memoria11.jpg" alt="Recuerdo"><p class="photo-caption">Ice skating ⛸️ </p></div>
+          <div class="gallery-item"><img src="img/memoria12.jpg" alt="Recuerdo"><p class="photo-caption">Egipcian food, ñam!</p></div>
+          <div class="gallery-item"><img src="img/memoria13.jpg" alt="Recuerdo"><p class="photo-caption">Autumn in Strasbourg 🍂</p></div>
+          <div class="gallery-item"><img src="img/memoria14.jpg" alt="Recuerdo"><p class="photo-caption">SO SEXY (snow version) 😍</p></div>
+          <div class="gallery-item"><img src="img/memoria15.jpg" alt="Recuerdo"><p class="photo-caption">You took me to the mountains to see the snow! ❄️</p></div>
+          <div class="gallery-item"><img src="img/memoria16.jpg" alt="Recuerdo"><p class="photo-caption">Ride and fluffy cows 🏍️</p></div>
+          <div class="gallery-item"><img src="img/memoria17.jpg" alt="Recuerdo"><p class="photo-caption">This day was full of love and chocolate 🍫</p></div>
+          <div class="gallery-item"><img src="img/memoria18.jpg" alt="Recuerdo"><p class="photo-caption">We saw monkeys in Germany 🐒</p></div>
+          <div class="gallery-item"><img src="img/memoria19.jpg" alt="Recuerdo"><p class="photo-caption">The first sunrise we watched together, you prepared hot chocolate ☕ </p></div>
+          <div class="gallery-item"><img src="img/memoria20.jpg" alt="Recuerdo"><p class="photo-caption">A date in a beautiful garden</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Espero que esto funcione xD-->
+
+    <div id="mensaje" class="content-section">
+      <h2>Send me a message 💌</h2>
+      <form action="https://formsubmit.co/vramiw@gmail.com" method="post">
+        <input type="text" name="nombre" placeholder="Tittle" required />
+        <textarea name="mensaje" rows="5" placeholder="Your message..." required></textarea>
+        <button type="submit">Send</button> 
+      </form>
+    </div>
+
+    <footer>
+      <p>Made with love for  you 🤎</p>
+    </footer>
+  
+    <script src="data/mensajes.js"></script>
+    <script src="script.js"></script>
+
+<!--Esto es para que se vean las imagenes del timeline-->
+<div id="lightbox" class="lightbox hidden">
+  <span class="close">&times;</span>
+  <img src="" alt="Imagen ampliada">
+</div>
+
+</body>
+</html>
