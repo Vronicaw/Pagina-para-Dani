@@ -14,6 +14,17 @@ nav {
   z-index: 1000;
 }
 
+/* Menu  */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #FEFAE0;
+  cursor: pointer;
+  text-align: right;
+  padding: 0 1rem;
+}
+
+
 /* Botón para iniciar la música hehe */
 #welcome-screen {
   position: fixed;
@@ -404,4 +415,44 @@ footer {
   color: #FEFAE0;
   text-align: center;
   padding: 1rem;
+}
+
+/* Estilo base del menú */
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #FEFAE0;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A3B18A;
+    margin-top: 1rem;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 1rem 0;
+  }
 }
