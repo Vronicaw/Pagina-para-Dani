@@ -42,16 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
     });
   });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('menu-toggle');
   const navLinks = document.getElementById('nav-links');
 
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
+  if (toggle && navLinks) {
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  }
 });
+
+  
 
 //esto es para la música
 document.addEventListener('click', () => {
