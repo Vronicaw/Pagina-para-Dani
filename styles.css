@@ -6,7 +6,7 @@ body {
 }
 
 nav {
-  background-color: #B1AB86;
+  background-color: #A3B18A;
   padding: 1rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   position: sticky; /* hace que se quede arriba al hacer scroll */
@@ -199,7 +199,7 @@ header::before {
 
 #mensaje button {
   padding: 0.8rem;
-  background-color: #819067;
+  background-color: #A3B18A;
   color: #FEFAE0;
   border: none;
   border-radius: 10px;
@@ -257,7 +257,7 @@ img {
 }
 
 #message-card {
-  background-color: #B1AB86;
+  background-color: #A3B18A;
   color: #0A400C;
   padding: 1rem;
   border-radius: 10px;
@@ -360,6 +360,41 @@ img {
 
 .hidden {
   display: none;
+}
+
+/* PROMESAS */
+.promises {
+  max-width: 700px;
+  margin: 4rem auto;
+  background-color: #fff8e7;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.promises h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0A400C;
+}
+
+.promises ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.promises li {
+  position: relative;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-left: 4px solid #819067;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 /*Final de la página */
