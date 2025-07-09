@@ -27,9 +27,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetId = link.getAttribute('href').substring(1);
 
       // Ocultar todas las secciones
-      document.querySelectorAll('.content-section').forEach(div => {
-        div.classList.remove('active');
-      });
+      const sections = document.querySelectorAll('.content-section');
+      if (sections.length) {
+        sections.forEach(div => div.classList.remove('active'));
+      }
 
       // Mostrar la sección correspondiente
       const targetDiv = document.getElementById(targetId);
@@ -40,6 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
       // Actualizar la clase "active" en los ítems del menú
       document.querySelectorAll('.menu a').forEach(a => a.classList.remove('active'));
       link.classList.add('active');
+
+      // Cerrar el menú si está abierto (para móviles)
+      const navLinks = document.getElementById('nav-links');
+      if (navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+      }
     });
   });
 
@@ -53,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-  
 
 //esto es para la música
 document.addEventListener('click', () => {
